@@ -18,7 +18,39 @@
 <body>
 <h1>System ekspertowy do wyboru cementu</h1>
 
-<p>Legenda: </p>
+<h2>Wyjaśnienie: </h2>
+
+<div>
+    Klasa wytrzymałości cementu określa, jak dużą obciążenie materiał jest w stanie unieść. Najczęściej stosowaną klasą wytrzymałości jest 32,5R, 42,5R lub 52,5R. Im wyższa liczba, tym cement ma większą wytrzymałość.
+</div>
+<div>
+    <p>
+    Cement Portlandzki (CEM I):
+    Zastosowania ogólne: Najczęściej stosowany w budownictwie. Nadaje się do większości standardowych prac budowlanych, takich jak fundamenty, ściany, chodniki, itp.
+    </p>
+
+    <p>
+    Cement Kompozytowy (CEM II):
+    Zastosowania ogólne: Może być używany w większości standardowych prac budowlanych, ale zawiera dodatkowe składniki, takie jak popiół lotny, które mogą wpłynąć na niektóre właściwości.
+    </p>
+
+    <p>
+    Cement Trzyskładnikowy (CEM III):
+    Budowa ekologiczna: Zawiera mniej klinkieru, co przekłada się na mniejsze oddziaływanie na środowisko. Może być stosowany w szerokim spektrum zastosowań budowlanych.
+    </p>
+
+    <p>
+    Cement Trójkomponentowy (CEM IV):
+    Budowa ekologiczna: Jest bardziej ekologiczny, ponieważ składa się głównie z materiałów wtórnych takich jak popiół lotny lub żużel hutniczy.
+    </p>
+
+    <p>
+    Cement Modyfikowany (CEM V):
+    Odporność na agresywne środowisko: Zawiera specjalne dodatki, które nadają mu lepszą odporność na korozję spowodowaną działaniem czynników agresywnych, takich jak chemikalia.
+    </p>
+</div>
+
+<h2>Legenda: </h2>
 <table>
     <tr>
         <td><b>Rodzaj cementu</b></td>
@@ -39,18 +71,18 @@
     <tr>
         <td>3 - CEM III – cement hutniczy</td>
         <td>3 - 42,5</td>
-        <td>3 - czarny</td>
+        <td></td>
 
     </tr>
     <tr>
         <td>4 - CEM IV – cement pucolanowy</td>
         <td>4 - 42,5 R</td>
-        <td>4 - czerwony</td>
+        <td></td>
     </tr>
     <tr>
         <td>5 - CEM V – cement wieloskładnikowy</td>
         <td>5 - 52,5</td>
-        <td>5 - brązowy</td>
+        <td></td>
     </tr>
     <tr>
         <td></td>
@@ -66,7 +98,7 @@
 <input type="range" min="1" max="6" value="1" class="slider" id="klasa">
 
 <p id="kolorValue">Kolor cementu: 1</p>
-<input type="range" min="1" max="5" value="1" class="slider" id="kolor">
+<input type="range" min="1" max="2" value="1" class="slider" id="kolor">
 
 <br><br>
 <button onclick="wybierzCement()">Wybierz Cement</button>
